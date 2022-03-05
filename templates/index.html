@@ -1,1 +1,30 @@
 <h1>Hello World</h1>
+
+<center>
+    <table>
+
+        {% for items in book %}
+        
+        <tr>
+
+            <td>
+                {{ items.title }} 
+            </td>
+            <br>
+
+            <td>
+                {{ items.author }}
+    
+            </td>
+            <br>
+
+            <td>
+                {{ items.publish_date }}
+    
+            </td>
+            {% endfor %}
+     
+        </tr>
+
+    </table>
+</center>
